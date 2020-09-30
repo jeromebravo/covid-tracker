@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    height: 100vh;
+    position: relative;
+}
+
+.header__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading--primary {
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    text-shadow: 0 1rem 1rem black;
+    color: white;
+}
+
+.heading--secondary {
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-shadow: 0 1rem 1rem black;
+    color: white;
+}
+
+.form {
+    text-align: center;
+}
+
+.form__group {
+    margin-top: 3rem;
+}
+
+.form__input {
+    font-size: 1.5rem;
+    font-family: inherit;
+    padding: 2rem 0;
+    width: 70%;
+    border: 1px solid #B32A2E;
+    border-radius: 10rem;
+    text-align: center; 
+}
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.form__button {
+    text-transform: uppercase;
+    padding: 2rem 0;
+    width: 70%;
+    border-radius: 10rem;
+    border: none;
+    cursor: pointer;
+    background-color: #B32A2E;
+    color: white;
+    letter-spacing: 2px;
+    transition: all .2s ease-in-out;
+}
+
+.form__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, .1);
+}
+
+.form__button:focus, .form__button:active {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.content {
+    height: 100vh;
+    position: relative;
+}
+
+.content__img {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+@media only screen and (max-width: 950px) {
+    .content__img {
+        height: 9rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .content__img {
+        height: 7rem;
+        top: 1rem;
+        left: 1rem;
+    }
+}
+
+.content__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+}
+
+.content__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__link {
+    text-decoration: none;
+    color: white;
+    background-color: #B32A2E;
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    width: 10%;
+    border-radius: 10rem;
+    margin-left: 2rem;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 770px) {
+    .content__link {
+        top: 1rem;
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 926px) {
+    .content__link {
+        width: 13%;
+    }
+}
+
+@media only screen and (max-width: 713px) {
+    .content__link {
+        width: 16%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .content__link {
+        width: 19%;
+    }
+}
+
+
+
+.content__link:hover {
+    transform: translateX(1rem);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+@media only screen and (max-width: 730px) {
+    .row {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .row {
+        width: 100%;
+    }
+}
+
+.content__box {
+    background-color: rgba(255, 255, 255, .8);
+    flex-grow: 1;
+    height: 15rem;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+.content__box:hover {
+    transform: translateY(-5px);
+}
+
+.content__box:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.content__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content__case {
+    font-size: 3rem;
+}
+
+.content__description {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.alert {
+    background-color: red;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    margin-top: 1rem;
+}
+
+.alert__message {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.spinner {
+    width: 20rem;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
