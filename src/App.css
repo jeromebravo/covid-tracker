@@ -179,7 +179,11 @@ body {
     }
 }
 
-
+@media only screen and (max-width: 440px) {
+    .content__link {
+        width: 22%;
+    }
+}
 
 .content__link:hover {
     transform: translateX(1rem);
